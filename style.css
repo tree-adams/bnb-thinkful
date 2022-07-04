@@ -1,0 +1,276 @@
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 5px 0px 5px;
+  text-align: center;
+}
+
+.section1 {
+  padding-top: 20px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+section.alternate-background {
+  background-color: #00a699;
+  color: #fff;
+}
+
+main img {
+  display: flex;
+  width: 100%;
+}
+
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  font-size: 50px;
+  padding: 20px;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+  font-size: 35px;
+}
+.item-double {
+  flex: 2;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  background-color: #ff385c;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+}
+
+.logo {
+  font-family: "Pangolin", cursive;
+  font-size: 48px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+#menu {
+  display: flex;
+  font-size: 14px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* -------  Search Form ------- */
+
+form {
+  border: 3.5px solid #ff385c;
+  padding: 15px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form select,
+form input {
+  margin-bottom: 20px;
+  width: 55%;
+}
+
+form button {
+  background-color: #ff385c;
+  border: none;
+  color: #fff;
+  font-size: 100%;
+  padding: 15px;
+  width: 100%;
+}
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #ff385c;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* -------  Media Query ------- */
+@media all and (min-width: 480px) {
+  main img {
+    width: 100%;
+  }
+
+  form {
+    border: 2px solid #ff385c;
+    padding: 10px;
+    margin: 10px 20px 20px 20px;
+  }
+
+  form select,
+  form input {
+    margin-bottom: 10px;
+    width: 95%;
+    font-size: 12px;
+  }
+
+  label {
+    font-size:14px;
+  }
+  .section1 {
+    font-size: 50px;
+    padding-top: 30px;
+    margin: 0px 35px;
+  }
+  .section2 {
+    font-size: 25px;
+    padding-top: 0px;
+    margin: 0px 35px;
+  }
+  .section3 {
+    font-size: 25px;
+    padding-top: 0px;
+    margin: 0px 35px;
+  }
+  .section4 {
+    font-size: 25px;
+    padding-top: 0px;
+    margin: 0px 35px;
+  }
+
+  .item-double {
+    font-size: larger;
+    flex: 2;
+    padding-left: 50px;
+  }
+
+  .item2 {
+    font-size: large;
+    flex: 1;
+  }
+
+  .group {
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .buttonClass {
+    display: flex;
+    justify-content: flex-end;
+    font-size:100%;
+    width: 15%
+  }
+  .logo {
+    padding: 25px;
+    margin-top: 0px;
+    font-size: 25px;
+  }
+
+  .host {
+    font-size: 24px;
+    margin: 0px 50px;
+    text-align: center;
+  }
+  .text {
+    font-size: 100%;
+  }
+
+  form button {
+    padding: 10px 15px;
+    font-size: 100%;
+    width:100%px;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .formGroup {
+    display: block;
+    flex-direction: column;
+  }
+  .formContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #menu {
+    display: flex;
+    place-self: center;
+  }
+
+  form label {
+    margin: 0;
+    width:100%;
+  }
+}
+
+
+@media all and (min-width: 1150px) {
+  form select,
+  form input {
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  form button {
+    padding: 10px 15px;
+    font-size: 100%;
+    width: 100%;
+  }
+}
